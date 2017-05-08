@@ -33,7 +33,8 @@
         "zendframework/zend-modulemanager": "^2.7.2",
         "rwoverdijk/assetmanager-core": "^0.0.1",
         "zendframework/zend-psr7bridge": "^0.2.2",
-        "zendframework/zend-mvc": "^3.1.0"
+        "zendframework/zend-mvc": "^3.1.0",
+        "zendframework/zend-component-installer": "^1.0 || ^0.7.0"
     },
     "require-dev": {
         "zendframework/zend-cache": "^2.7.1",
@@ -47,6 +48,11 @@
     "autoload": {
         "psr-4": {
             "AssetManager\\": "src/"
+        }
+    },
+    "extra": {
+        "zf": {
+            "config-provider": "AssetManager\\Module"
         }
     },
     "autoload-dev": {
