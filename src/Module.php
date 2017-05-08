@@ -66,7 +66,7 @@ class Module implements
         $serviceManager = $event->getApplication()->getServiceManager();
 
         /** @var AssetManager $assetManager */
-        $assetManager   = $serviceManager->get(__NAMESPACE__ . '\Service\AssetManager');
+        $assetManager   = $serviceManager->get(AssetManager::class);
 
         if (!$assetManager->resolvesToAsset($request)) {
             return null;
