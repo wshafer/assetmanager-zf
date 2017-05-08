@@ -52,7 +52,7 @@
     },
     "extra": {
         "zf": {
-            "config-provider": "AssetManager\\Module"
+            "module": "AssetManager"
         }
     },
     "autoload-dev": {
